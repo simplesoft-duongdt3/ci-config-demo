@@ -1,0 +1,12 @@
+image: busybox:latest
+
+stages:
+  - test
+
+unit_test:
+  stage: test
+  tags:
+    - ci-cd-gitlab-shell-runner
+  script:
+    - echo "Do a test here"
+    - echo "For example run a test suite"
